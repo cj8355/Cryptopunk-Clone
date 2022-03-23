@@ -37,7 +37,7 @@
 
 .title {
     font-size: 96px;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .itemNumber {
@@ -73,6 +73,7 @@
     display: flex;
     align-items: center;
     flex: 1;
+    color: white;
 }
 
 .ownerHandle {
@@ -91,4 +92,8 @@
 .ownerLink > img {
     height: 100%;
     width: 100%;
+}
+
+.ownerNameAndHandle {
+    flex: 1;
 }

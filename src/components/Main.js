@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import instagramLogo from '../assets/owner/instagram.png';
 import twitterLogo from '../assets/owner/twitter.png';
 import moreIcon from '../assets/owner/more.png';
 import './Main.css';
 
-const Main = () => {
+const Main = ({ selectedPunk, punkListData }) => {
+    const [activePunk, setActivePunk] = useState(punkListData[0]);
+
+    useEffect(() => {
+        setActivePunk(punkListData[selectedPunk])
+    }, [punkListData, selectedPunk])
   return (
     <div className='Main'>
         <div className='mainContent'>
@@ -12,24 +17,24 @@ const Main = () => {
                 <div className='punkContainer'>
                     <img 
                     className='selectedPunk'
-                    src={"https://lh3.googleusercontent.com/9B1oTFEv4DeaW9gFwnd1ION2NzfGnC9lHfjnPNSbNkDZmID0P7Di6Y6ptZxZuf0oaWgnAKLu1eqEbdlCJSpHDFUceo2D7H9c0wK56Q=s250"} />
+                    src={activePunk.image_preview_url} /> 
 
                 </div>
             </div>
 
             <div className='punkDetails' style={{ color: '#fff' }}>
-                <div className='title'>Bandana Punk</div>
-                <span className='itemNumber'>•#3</span>
+                <div className='title'>{activePunk.name}</div>
+                <span className='itemNumber'>•#{activePunk.token_id}</span>
             </div>
             <div className='owner'>
                 <div className='ownerImageContainer'>
                     <img 
-                    src={"https://lh3.googleusercontent.com/9B1oTFEv4DeaW9gFwnd1ION2NzfGnC9lHfjnPNSbNkDZmID0P7Di6Y6ptZxZuf0oaWgnAKLu1eqEbdlCJSpHDFUceo2D7H9c0wK56Q=s250"} 
+                    src={activePunk.owner.profile_img_url} 
                     />
                 </div>
                 <div className='ownerDetails'>
                     <div className='ownerNameAndHandle'>
-                        <div>v0x0961494ae4217FB91c82D056913bc13513935bba</div>
+                        <div>{activePunk.owner.address} </div>
                         <div className='ownerHandle'>That's me</div>
                     </div>
                     <div className='ownerLink'>
@@ -48,4 +53,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Main;
