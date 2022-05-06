@@ -9,7 +9,7 @@ import Main from './components/Main';
 
 function App() {
   const [punkListData, setPunkListData] = useState([]);
-  const [selectedPunk, setSelectedPunk] = useState(0);s
+  const [selectedPunk, setSelectedPunk] = useState(0);
 
   useEffect(() => {
     const getMyNfts = async () => {
