@@ -18,7 +18,10 @@ function App() {
         {headers: {
           'Access-Control-Allow-Origin' : '*',
           'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-          }}
+          },
+          withCredentials: true,
+          credentials: 'same-origin'
+        }
       )
         console.log(openSeaData.data.assets)
         setPunkListData(openSeaData.data.assets)
