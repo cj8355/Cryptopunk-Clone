@@ -2,8 +2,8 @@
   "name": "cryptopunk",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://testnets-api.opensea.io",
   "homepage": "http://cj8355.github.io/Cryptopunk-Clone",
+  "proxy": "https://testnets-api.opensea.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
