@@ -11,6 +11,8 @@ function App() {
   const [punkListData, setPunkListData] = useState([]);
   const [selectedPunk, setSelectedPunk] = useState(0);
 
+  axios.defaults.baseURL = 'https://testnets-api.opensea.io';
+
   useEffect(() => {
     const getMyNfts = async () => {
       const openSeaData = await axios.get(
