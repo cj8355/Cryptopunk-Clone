@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Cryptopunk-Clone/static/css/main.55d16456.css",
-    "main.js": "/Cryptopunk-Clone/static/js/main.9912b73d.js",
+    "main.js": "/Cryptopunk-Clone/static/js/main.1b6daf09.js",
     "static/js/787.c549646d.chunk.js": "/Cryptopunk-Clone/static/js/787.c549646d.chunk.js",
     "static/media/weth.png": "/Cryptopunk-Clone/static/media/weth.4101f1dacb92484cfd3f.png",
     "static/media/cryptopunk-logo.png": "/Cryptopunk-Clone/static/media/cryptopunk-logo.8bee49d57faa44bb66f5.png",
     "static/media/logo.svg": "/Cryptopunk-Clone/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Cryptopunk-Clone/index.html",
     "main.55d16456.css.map": "/Cryptopunk-Clone/static/css/main.55d16456.css.map",
-    "main.9912b73d.js.map": "/Cryptopunk-Clone/static/js/main.9912b73d.js.map",
+    "main.1b6daf09.js.map": "/Cryptopunk-Clone/static/js/main.1b6daf09.js.map",
     "787.c549646d.chunk.js.map": "/Cryptopunk-Clone/static/js/787.c549646d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55d16456.css",
-    "static/js/main.9912b73d.js"
+    "static/js/main.1b6daf09.js"
   ]
 }
